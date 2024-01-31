@@ -1,0 +1,341 @@
+@font-face {
+    font-family:almost-everything;
+    src: url("fonts/font.otf");
+  }
+  
+  @font-face {
+    font-family:header-font;
+    src: url("fonts/fontheader.ttf");
+  }
+  
+  *{
+    box-sizing: border-box;
+    font-family:almost-everything;
+  }
+  html,
+  body {
+   height: 100%;
+   position: relative;
+   padding: 0;
+   margin: 0;
+  }
+  
+  #starter-body{
+    background-image: url("img/background/background_image.png");
+    background-size:  100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  } 
+  
+  header{
+    background: linear-gradient(to right,#0b2d75,#316b88,#44cce0);
+    position: sticky;
+    top:0;
+    right:0;
+    z-index: 999;
+    font-family: header-font;
+  }
+  
+  
+  main{ 
+    min-height: 100%;
+    width: 100%;
+    font-size: 100%;
+  }
+  
+  footer{
+    font-size: 100%;
+    background: rgb(8, 11, 25);
+    color: rgb(211, 211, 211);
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  h1{
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-size: 220%;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  
+  #shop-icon{
+    inline-size: 5%;
+  }
+  
+  nav ul {
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(8, 11, 25);
+  }
+   
+  nav li {
+    display: inline-block;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: header-font;
+  }
+  
+  li a:hover {
+    color:white;
+    background-color: rgb(132, 134, 156);
+  }
+  
+  .active {
+    background-color: #483499;
+  }
+
+  #sign-up-nav{
+    float:right;
+  }
+
+  
+ 
+  .fa {
+    padding: 10px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;  
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #ae3692;
+    color: white;
+  }
+  
+
+  /*--------------------------- start index.html --------------------------*/
+  #container{
+
+    font-family: header-font;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px;
+
+  }
+
+  .category-show {
+    display: inline-block;
+  }
+  
+  .categories-show {
+    display: block;
+    text-align: center;
+    font-size: 200%;
+    padding: 20px 20px;
+    font-family: header-font;
+    border-width: 5px;
+    border-color: black;
+    border-style: double;
+    background-color: lightblue;
+  }
+  .category-img{
+    border-width: 5px;
+    border-color: black;
+    border-style:double;
+  }
+
+  .categories-show a {
+    color:black;
+    
+  }
+  .categories-show a:hover {
+    color:rgb(11, 5, 88);
+  }
+
+/*------------------------------ end index.html ----------------------------*/
+/*----------------------------- start category.html --------------------------*/
+#category-body{
+    background-color: rgb(230, 230, 230);
+
+}
+
+#filter{
+    margin: 20%; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-color: black;
+    border-width: 2px;
+    border-style: double;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(180deg, rgb(179, 175, 252) 0%, rgb(104, 209, 231) 100%);
+}
+
+
+
+.filters{
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+#filter-header{
+    font-weight: bold;
+    color:black;
+}
+
+.radio{
+    margin:auto ;
+    color: black;
+}
+
+#btn{
+    margin:10px;
+   background-color: white;
+   color: black;
+   border: 2px solid #4cbaff; 
+}
+
+#btn:hover {
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24), 0 4px 10px 0 rgba(0,0,0,0.19);
+  }
+
+/* ------------------------------------------- */
+
+#product-details{
+    
+    text-align: center;
+    margin: 20% ;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+  }
+
+  .product-title{
+    color:black;
+    font-style: bold;
+    text-decoration: underline overline;
+    
+  }
+
+  .description{
+    color:black;
+    text-decoration:underline rgb(47, 6, 83);
+   
+  }
+
+.product-img{
+    height:40%;
+    width:40%;
+    border-width: 5px;
+    border-color: black;
+    border-style:double;    
+  }
+
+/*---------------------------- end category.html -------------------------*/
+ /*---------------------------- start register.html -------------------------*/
+ #register-body{
+    background: linear-gradient(140deg, #4edfe6 50%, #ffffff 50%); 
+  }
+ 
+ label {
+    font-size: 1.75em;
+    color: gray;
+  }
+  
+  input, textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #555;
+    border-radius: 15px;
+    resize: none;
+  }
+  
+  input[type=submit], input[type=reset], .addToCart {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+ /*---------------------------- end register.html -------------------------*/ 
+
+
+
+  
+  /*/media for tablet/*/
+  @media only screen and (max-width: 1280px) {
+   
+    #starter-body{
+      background-image: url("img/background/background_image_smartphone.png");
+      background-repeat: no-repeat; 
+        background-position: center;
+        background-attachment: fixed;       
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    } 
+  
+  
+  
+    #shop-icon{
+      inline-size:  8%;
+    }
+  
+    
+    nav li {
+      width:20%;
+      font-size: 80%;
+    }
+
+  }
+  /*/media for teblet end/*/
+  
+  
+  /*/media for phone/*/
+  @media only screen and (max-width: 700px) {
+   
+    #starter-body{
+      background-image: url("img/background/background_image_smartphone.png");
+      background-repeat: no-repeat; 
+        background-position: center;
+        background-attachment: fixed;       
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    } 
+  
+  
+    #shop-icon{
+      inline-size:  10%;
+    }
+  
+    
+    nav li {
+      width:23%;
+      font-size: 80%;
+    }
+
+  }
+  /*/media for phone end/*/
+  
