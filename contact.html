@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Contact us</title>
+        <meta charset="UTF-8">
+        <!-- Social media icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="shortcut icon" href="img/icons/eshop.png"/>
+    </head>
+
+    <body>
+
+        <header>
+            <img src="img/icons/eshop.png" alt="eshop icon" id = shop-icon>
+            <h1>Our Tech Eshop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Starter page</a></li>
+                    <li><a href="product_categories.html">Categories</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                    <button id=sign-up onclick="window.location.href = 'sign_up.html';">Sign Up</button>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="wrap">
+                
+                <div class="banner">
+                    <h2>Contact Us</h2>
+                    <P>Feel free to drop us a line below</P>
+                </div>
+
+
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br>
+                    <label for="email">Enter your email:</label><br>
+                    <input type="email" id="email" name="email" value="johndoe@gmail.com"><br>
+                    <label for="prcode">Product code:</label><br>
+                    <input type="text" id="prcode" name="prcode" value="001-050"><br>
+                    <label for="birthdaytime">Birthday (date and time):</label><br>
+                    <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+                    <label for="myfile">Select a receipt:</label><br>
+                    <input type="file" id="myfile" name="myfile"><br>
+                    <label for="description">Description:</label><br>
+                    <textarea id="description" name="description" rows="5" cols="50">Give us a description of the problem you are facing...</textarea><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset">
+                </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <span>Contact us: oureshop@gmail.com</span>
+            <span>ALL RIGHTS RESERVED 	&copy;</span>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"></a>
+        </footer>
+
+    </body>
+
+</html>
